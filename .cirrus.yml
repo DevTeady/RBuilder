@@ -14,9 +14,6 @@ task:
       cpu: 8
       memory: 32G
 
-  Checks_script:
-      - curl -sL https://raw.githubusercontent.com/DevTeady/RBuilder/main/checks.sh | bash
-
   Sync_script:
       - curl -sL https://raw.githubusercontent.com/DevTeady/RBuilder/main/sync.sh | bash
 
