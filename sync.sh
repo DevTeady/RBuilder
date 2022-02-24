@@ -1,13 +1,8 @@
 #!/bin/bash
-source vars.sh
 
 # Make the Directory if it doesn't exist
 mkdir -p $SYNC_PATH
 
-telegram_message() {
-	curl -s -X POST "https://api.telegram.org/bot${TG_TOKEN}/sendMessage" -d chat_id="${TG_CHAT_ID}" \
-	-d text="$1"
-}
 
 # Change to the Source Directory
 cd $SYNC_PATH
