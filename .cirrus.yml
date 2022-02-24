@@ -1,0 +1,28 @@
+env:
+    # Telegram
+    TG_CHAT_ID: 1058998769
+    TG_TOKEN: 5042048294:AAG_XKGPCquvOXsyEUkTZI8Aol20esF6wsQ
+
+    # Cirrus Specific Vars (Do *NOT* Change)
+    CIRRUS_SHELL: bash
+
+task:
+  name: "CR Builder"
+  timeout_in: 300m
+  container:
+      image: ghcr.io/sushrut1101/docker:latest
+      cpu: 8
+      memory: 32G
+
+  Checks_script:
+      - curl -sL https://raw.githubusercontent.com/DevTeady/RBuilder/main/checks.sh | bash
+
+  Sync_script:
+      - curl -sL https://raw.githubusercontent.com/DevTeady/RBuilder/main/sync.sh | bash
+
+  Build_script:
+      - curl -sL https://raw.githubusercontent.com/DevTeady/RBuilder/main/build.sh | bash
+
+  Upload_script:
+      - export TIMEOUT=20160 # Link timeout (in minutes)
+      - curl https://raw.githubusercontent.com/DevTeady/RBuilder/main/upload.sh | bash
