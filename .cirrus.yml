@@ -21,5 +21,4 @@ task:
       - curl -sL https://raw.githubusercontent.com/DevTeady/RBuilder/main/build.sh | bash
 
   Upload_script:
-      - export TIMEOUT=20160 # Link timeout (in minutes)
       - curl https://raw.githubusercontent.com/DevTeady/RBuilder/main/upload.sh | bash
