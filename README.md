@@ -18,4 +18,4 @@ A Free CI to Build CROM
 
 ## Credis
 - @Sushrut1101 - To Make Recovery CI
--  @DevTeady - To Rework ROM CI
+-  @DevTeady - To Rework CRB CI
