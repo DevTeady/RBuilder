@@ -44,17 +44,6 @@ echo "Download Link: ${DL_LINK}" || { echo "ERROR: Failed to Upload the Build!";
 echo "Mirror: ${MIRROR_LINK}" || { echo "WARNING: Failed to Mirror the Build!"; }
 echo "=============================================="
 
-telegram_message \
-"
-O.o Saad's ROM Builder CI
-✅ Build Completed Successfully!
-📱 Device: ${DEVICE}
-🖥 Build OS: ${MANIFEST_BRANCH}
-⬇️ Download Link: [${DL_LINK}](Here)
-📅 Date: $(date +'%d %B %Y')
-⏱ Time: $(date +"%T")
-"
-echo " "
 
 # Exit
 exit 0

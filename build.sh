@@ -16,18 +16,6 @@ else
     ccache -M ${CCACHE_SIZE}
 fi
 
-
-# Send the Telegram Message
-telegram_message \
-"
-O.o Saad's ROM Builder CI
-✔️ The Build has been Triggered!
-📱 Device: ${DEVICE}
-🌲 Logs: [https://cirrus-ci.com/build/${CIRRUS_BUILD_ID}](https://cirrus-ci.com/build/${CIRRUS_BUILD_ID})
-🖥 Build OS: ${MANIFEST_BRANCH}
-"
-echo " "
-
 # Run the Extra Command
 $EXTRA_CMD
 
