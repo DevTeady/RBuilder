@@ -1,13 +1,10 @@
 env:
-    # Telegram
-    TG_CHAT_ID: 1058998769
-    TG_TOKEN: 5042048294:AAG_XKGPCquvOXsyEUkTZI8Aol20esF6wsQ
 
     # Cirrus Specific Vars (Do *NOT* Change)
     CIRRUS_SHELL: bash
 
 task:
-  name: "CR Builder"
+  name: "CR Builder CI"
   timeout_in: 300m
   container:
       image: ghcr.io/sushrut1101/docker:latest
