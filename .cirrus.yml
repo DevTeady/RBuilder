@@ -11,7 +11,7 @@ task:
       cpu: 8
       memory: 32G
 
-  Set_var:
+  Var_script:
       - curl -sL https://raw.githubusercontent.com/DevTeady/RBuilder/main/vars.sh | bash
 
   Sync_script:
