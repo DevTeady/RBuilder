@@ -4,7 +4,7 @@ mkdir -p $SYNC_PATH
 # Change to the Source Directory
 cd $SYNC_PATH
 # Init Repo
-repo init -u $MANIFEST -b $MANIFEST_BRANCH
+repo init --depth=1 -u $MANIFEST -b $MANIFEST_BRANCH
 # Sync the Sources
 repo sync -j$(nproc --all) --force-sync --no-tags --no-clone-bundle
 # Clone Trees
