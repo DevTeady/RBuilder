@@ -12,7 +12,7 @@ A Free CI to Build CROM
 
 ### - Build via a PR (Pull Request)
 1. Fork [this Repo](https://github.com/DevTeady/RBuilder.git).
-2. Edit vars.sh (Only) According to your Needs.
+2. Edit (Only) vars.sh According to your Needs.
 3. Create a Pull Reuest.
 4. Go to [cirrus-ci.com](https://cirrus-ci.com) And see the Build Logs.
 
