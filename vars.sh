@@ -32,4 +32,4 @@ export USE_CCACHE=1
 export CCACHE_EXEC=$(which ccache)
 export CCACHE_DIR="${SYNC_PATH}/.ccache"
 export CCACHE_SIZE=30G
-export J_VAL=16 # for -jx, eg: "16"
+export J_VAL=8 # for -jx, eg: "16"
