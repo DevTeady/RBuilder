@@ -1,6 +1,4 @@
 env:
-
-    # Cirrus Specific Vars (Do *NOT* Change)
     CIRRUS_SHELL: bash
 
 task:
