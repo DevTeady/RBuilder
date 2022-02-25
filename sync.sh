@@ -4,6 +4,8 @@ source vars.sh
 mkdir -p $SYNC_PATH
 # Change to the Source Directory
 cd $SYNC_PATH
+# Install repo
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 # Init Repo
 repo init --depth=1 -u $MANIFEST -b $MANIFEST_BRANCH
 # Sync the Sources
