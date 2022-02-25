@@ -1,4 +1,4 @@
-# 🦊 CRBuilder CI
+# CRBuilder CI
 A Free CI to Build CROM
 
 ## How to Use?
