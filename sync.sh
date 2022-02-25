@@ -7,6 +7,7 @@ cd $SYNC_PATH
 # Install repo
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 # Init Repo
+repo init
 repo init --depth=1 -u $MANIFEST -b $MANIFEST_BRANCH
 # Sync the Sources
 repo sync -j$(nproc --all) --force-sync --no-tags --no-clone-bundle
